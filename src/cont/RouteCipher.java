@@ -6,9 +6,7 @@ import javax.swing.JOptionPane;
 
 public class RouteCipher
 	{
-		//private String[][] letterBlock;
-		
-		//char[][] new_arr = new char[i][i];
+	//This class counstructs the route cipher
 		
 		
 		String msg = "Write a number";
@@ -32,7 +30,7 @@ public class RouteCipher
 			//System.out.println ();
 			    
 		}
-		
+		//it claculates how big the array is going to be
 		public void arrayNumber() {
 			String message = JOP.in(msg);
 			int number = Integer.parseInt(message.trim());
@@ -43,7 +41,7 @@ public class RouteCipher
 			col = i;
 			System.out.println(col);
 		}
-		
+		//it changes the letters in the array
 		public void code() {
 			char[][] arr = new char[row][col];
 			
@@ -183,23 +181,13 @@ public class RouteCipher
 					        for (int n=0; n < arr[m].length; n++) {
 					            s += arr[m][n];
 					        }
-					        // uncomment next line if you want the maze to have rows
+					      
 					        s += "\n";
 					    }
-					    //System.out.println(s.toString());
+			
 					    sam = s.toString();
-					    //JOP.msg(s.toString());
 					    
-					    
-			    	
-			    	//String str = String. valueOf(arr[x][j]);
-			    	//printArray(str);
-			    	//printMaze(arr[x][j]);
-			    	
-			        //System.out.print(arr[x][j]);
-			    	//System.out.print(str);
-			    	//JOP.msg(str);
-			    	//JOptionPane.showMessageDialog(null, Arrays.toString(arr));
+					
 					    }
 			    }
 		}
@@ -209,7 +197,7 @@ public class RouteCipher
 
 			
 		}
-		
+//It diplays the new array with the letters changed
 		public static void printArray(String[][] num1) {
 		    String output = "";
 		    for (int x = 0; x < num1.length; x++) {
@@ -219,17 +207,7 @@ public class RouteCipher
 		            JOptionPane.INFORMATION_MESSAGE);
 		}
 		
-		public String printMaze(char[][] maze) {
-		    String s = "";
-		    for (int i=0; i < maze.length; i++) {
-		        for (int j=0; j < maze[i].length; j++) {
-		            s += maze[i][j];
-		        }
-		        // uncomment next line if you want the maze to have rows
-		        s += "\n";
-		    }
-		    return s.toString();
-		}
+	}
 		
 		
 		
